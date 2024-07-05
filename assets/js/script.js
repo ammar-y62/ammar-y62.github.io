@@ -157,3 +157,18 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+document.querySelector('.outer').addEventListener('mousemove', (e) => {
+  const card = document.querySelector('.card');
+  const { offsetWidth: width, offsetHeight: height } = card;
+  const { offsetX: x, offsetY: y } = e;
+
+  const rotateY = (x / width - 0.5) * 30;
+  const rotateX = (y / height - 0.5) * -30;
+
+  card.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+});
+
+document.querySelector('.outer').addEventListener('mouseleave', () => {
+  const card = document.querySelector('.card');
+  card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+});
