@@ -705,7 +705,10 @@ button.btn:hover {
 
 .service-icon-box { margin-bottom: 10px; }
 
-.service-icon-box img { margin: auto; }
+.service-icon-box img {
+  margin: auto;
+  border-radius: 14px;
+ }
 
 .service-content-box { text-align: center; }
 
