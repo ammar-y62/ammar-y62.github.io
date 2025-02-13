@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vCard - Personal Portfolio</title>
-  <script src="scripts/app.js" defer></script>
 
   <!--
     - favicon
@@ -24,6 +23,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "Xub_U86cOKUW7TQWP",
+        });
+    })();
+  </script>
 </head>
 
 <body>
@@ -55,7 +64,7 @@
         <div class="info-content">
           <h1 class="name" title="Ammar Elzeftawy">Ammar Elzeftawy</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Software Developer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -300,17 +309,17 @@
 
     <ul class="testimonials-list has-scrollbar">
       <li class="testimonials-item">
-        <div class="content-card" data-testimonials-item data-testimonials-date="October 2023">
+        <div class="content-card" data-testimonials-item data-testimonials-date="October 2023 - Present">
 
           <figure class="testimonials-avatar-box">
-            <img src="./assets/images/sales-hustle.png" class="border-radius" alt="Sales" width="60" data-testimonials-avatar>
+            <img src="./assets/images/ammart.png" class="border-radius" alt="Sales" width="60" data-testimonials-avatar>
           </figure>
 
-          <h4 class="h4 testimonials-item-title" data-testimonials-title>Sales</h4>
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Ammart, Founder</h4>
 
           <div class="testimonials-text" data-testimonials-text>
             <p>
-              Sold over $4,000 worth of physical products with a profit exceeding $2,500. Maintained a 5-star rating with over 80 clients on Marketplace. Developed an automated Excel system for managing sales and inventory.
+              Sold over $13,000 worth of physical products with a profit exceeding $8,000 (Around 68% Profit). Maintained a 5-star rating with over 230 clients on Marketplace. Developed an automated Software and an Excel system for managing sales, inventory, and client interactions.
             </p>
           </div>
 
@@ -318,17 +327,17 @@
       </li>
 
       <li class="testimonials-item">
-        <div class="content-card" data-testimonials-item data-testimonials-date="November 2022">
+        <div class="content-card" data-testimonials-item data-testimonials-date="November 2022 - Present">
 
           <figure class="testimonials-avatar-box">
             <img src="./assets/images/esa.png" alt="Egyptian Student Association" width="60" data-testimonials-avatar>
           </figure>
 
-          <h4 class="h4 testimonials-item-title" data-testimonials-title>Egyptian Student Association, VP Finance</h4>
+          <h4 class="h4 testimonials-item-title" data-testimonials-title>Egyptian Student Association, Co-Founder and VP Finance</h4>
 
           <div class="testimonials-text" data-testimonials-text>
             <p>
-              Led several events with 1,000+ attendees, grew revenue by 500%, and increased community engagement by 120%.
+              Led several events with 1,000+ attendees, grew revenue by 500%, and increased community engagement by 220%.
             </p>
           </div>
 
@@ -336,7 +345,7 @@
       </li>
 
       <li class="testimonials-item">
-        <div class="content-card" data-testimonials-item data-testimonials-date="March 2019">
+        <div class="content-card" data-testimonials-item data-testimonials-date="March 2019 - September 2022">
 
           <figure class="testimonials-avatar-box">
             <img src="./assets/images/empire.jpg" class="border-radius" alt="Empire Attire Affiliate Program" width="60" data-testimonials-avatar>
@@ -374,7 +383,7 @@
 
       <div class="modal-img-wrapper">
         <figure class="modal-avatar-box">
-          <img src="./assets/images/avatar-1.png" alt="Egyptian Student Association" width="80" data-modal-img style="border-radius: 14px;">
+          <img src="./assets/images/esa.png" alt="Egyptian Student Association" width="80" data-modal-img style="border-radius: 14px;">
         </figure>
 
         <img src="./assets/images/icon-quote.svg" alt="quote icon">
@@ -759,13 +768,29 @@
         <section class="blog-posts">
             <ul class="blog-posts-list">
               <li class="blog-post-item">
+                <a href="assets/files/Paper_AI_In_Education.pdf" target="_blank">
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/paper-ai-education.jpg" alt="AI in Education" loading="lazy">
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <span class="dot"></span>
+                      <time datetime="2024-07-23">August 23, 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">Integrating AI Tools in Academia</h3>
+                    <p class="blog-text">
+                      A comprehensive paper evaluating AI's impact on academic practices, intellectual development, and proposing educational revisions.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
                 <a href="assets/files/LR_AI_In_Education.pdf" target="_blank">
                   <figure class="blog-banner-box">
                     <img src="./assets/images/blog-ai-education.jpg" alt="AI in Education" loading="lazy">
                   </figure>
                   <div class="blog-content">
                     <div class="blog-meta">
-                      <p class="blog-category">AI</p>
                       <span class="dot"></span>
                       <time datetime="2024-07-23">July 23, 2024</time>
                     </div>
@@ -783,7 +808,6 @@
                   </figure>
                   <div class="blog-content">
                     <div class="blog-meta">
-                      <p class="blog-category">Data Analytics</p>
                       <span class="dot"></span>
                       <time datetime="2023-07-23">July 23, 2023</time>
                     </div>
@@ -801,7 +825,6 @@
                   </figure>
                   <div class="blog-content">
                     <div class="blog-meta">
-                      <p class="blog-category">Development</p>
                       <span class="dot"></span>
                       <time datetime="2022-07-23">July 23, 2022</time>
                     </div>
@@ -839,26 +862,25 @@
         </section>
 
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
+
 
           <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="name" id="name" class="form-input" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" id="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button onclick="sendMail()" class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span >Send Message</span>
             </button>
 
           </form>
-
         </section>
 
       </article>

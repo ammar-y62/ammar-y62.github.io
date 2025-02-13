@@ -117,25 +117,6 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 
 
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-
-  });
-}
-
 
 
 // page navigation variables
@@ -174,3 +155,29 @@ document.querySelector('.outer').addEventListener('mouseleave', () => {
   const card = document.querySelector('.card');
   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
 });
+
+function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+  console.log( params);
+  if (!params.name || !params.email || !params.message) {
+    alert("Please fill out all fields before sending.");
+    return; // Prevent sending the email if fields are empty
+  }
+  const serviceID = "service_gtex59a";
+  const templateID = "template_fz0biyk";
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+
+}
