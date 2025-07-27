@@ -1,147 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function(){
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
         emailjs.init({
           publicKey: "Xub_U86cOKUW7TQWP",
         });
-    })();
-  </script>
-</head>
+      })();
+    </script>
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <!-- <figure class="avatar-box">
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <!-- <figure class="avatar-box">
           <img src="./assets/images/profile.jpg" alt="Ammar Elzeftawy" width="100" class="profile-image">
         </figure> -->
-        <div class=" outer">
+          <div class="outer">
             <div class="card">
               <div class="dot"></div>
               <div class="ray"></div>
-              <img src="assets/images/profile.jpg" alt="Ammar Elzeftawy" class="profile-image">
+              <img
+                src="assets/images/profile.jpg"
+                alt="Ammar Elzeftawy"
+                class="profile-image"
+              />
             </div>
+          </div>
+          <div class="info-content">
+            <h1 class="name" title="Ammar Elzeftawy">Ammar Elzeftawy</h1>
+
+            <p class="title">Software Engineer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
-        <div class="info-content">
-          <h1 class="name" title="Ammar Elzeftawy">Ammar Elzeftawy</h1>
 
-          <p class="title">Software Engineer</p>
-        </div>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      </div>
+                <a href="mailto:amzeftawy@gmail.com" class="contact-link"
+                  >amzeftawy@gmail.com</a
+                >
+              </div>
+            </li>
 
-      <div class="sidebar-info_more">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <div class="separator"></div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-        <ul class="contacts-list">
+                <a href="tel:+15879664118" class="contact-link"
+                  >+1 (587) 966-4118</a
+                >
+              </div>
+            </li>
 
-          <li class="contact-item">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+                <time datetime="1982-06-23">May 8, 2002</time>
+              </div>
+            </li>
 
-              <a href="mailto:amzeftawy@gmail.com" class="contact-link">amzeftawy@gmail.com</a>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          </li>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-          <li class="contact-item">
+                <address>Calgary, Alberta, Canada</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+          <div class="separator"></div>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+15879664118" class="contact-link">+1 (587) 966-4118</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">May 8, 2002</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Calgary, Alberta, Canada</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
+          <ul class="social-list">
             <li class="social-media-card">
               <a href="https://github.com/ammar-y62" class="social-link2">
                 <ion-icon name="logo-github"></ion-icon>
@@ -155,475 +154,583 @@
             </li>
 
             <li class="social-media-card">
-              <a href="https://www.instagram.com/ammar.y62/" class="social-link1">
+              <a
+                href="https://www.instagram.com/ammar.y62/"
+                class="social-link1"
+              >
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
 
             <li class="social-media-card">
-              <a href="https://www.linkedin.com/in/ammar-elzeftawy-75a34a242/" class="social-link4">
+              <a
+                href="https://www.linkedin.com/in/ammar-elzeftawy-75a34a242/"
+                class="social-link4"
+              >
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
           </ul>
+        </div>
+      </aside>
 
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
+          <section class="about-text">
             <p>
-                I am Ammar Elzeftawy, a Software Engineering graduate with a minor in Mechatronics from the University of Calgary. I specialize in full-stack development with interests in AI, mechatronics, and web development. I have a passion for finance and budgeting, and I am an active gym-goer who enjoys football, Jiu-Jitsu, and squash.
-              </p>
+              I am Ammar Elzeftawy, a Software Engineering graduate with a minor
+              in Mechatronics from the University of Calgary. I specialize in
+              full-stack development with interests in AI, mechatronics, and finance.
+              I am an active gym-goer who enjoys football, Jiu-Jitsu, and squash.
+            </p>
 
-              <p>
-                My goal is to create user-friendly and functional web applications that are also visually appealing. I thrive on solving complex problems with innovative solutions and am dedicated to continuous learning and improvement.
-              </p>
-        </section>
+            <p>
+              My goal is to create user-friendly and functional web applications
+              that are also visually appealing. I thrive on solving complex
+              problems with innovative solutions and am dedicated to continuous
+              learning and improvement.
+            </p>
+          </section>
 
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
             <h3 class="h3 service-title">What I'm Doing</h3>
             <ul class="service-list">
-
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img src="./assets/images/web-development.jpg" alt="design icon" width="100">
+                  <img
+                    src="./assets/images/web-development.jpg"
+                    alt="design icon"
+                    width="100"
+                  />
                 </div>
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Full-Stack Development</h4>
                   <p class="service-item-text">
-                    High-quality development of websites and applications at a professional level.
+                    High-quality development of web/mobile applications at a
+                    professional level.
                   </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img src="./assets/images/ai.jpg" alt="AI icon" width="100">
+                  <img src="./assets/images/ai.jpg" alt="AI icon" width="100" />
                 </div>
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Artificial Intelligence</h4>
                   <p class="service-item-text">
-                    Developing and integrating AI solutions to enhance functionality and user experience.
+                    Developing and integrating AI solutions to enhance
+                    functionality and user experience.
                   </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img src="./assets/images/mechatronics.jpg" alt="mechatronics icon" width="100">
+                  <img
+                    src="./assets/images/mechatronics.jpg"
+                    alt="mechatronics icon"
+                    width="100"
+                  />
                 </div>
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Mechatronics</h4>
                   <p class="service-item-text">
-                    Combining principles of mechanics, electronics, and computing to create innovative solutions.
+                    Combining principles of mechanics, electronics, and
+                    computing to create innovative solutions.
                   </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img src="./assets/images/finance.jpg" alt="finance icon" width="100">
+                  <img
+                    src="./assets/images/finance.jpg"
+                    alt="finance icon"
+                    width="100"
+                  />
                 </div>
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Finance & Budgeting</h4>
                   <p class="service-item-text">
-                    Providing detailed financial planning and budgeting to ensure project success.
+                    Providing detailed financial planning and budgeting to
+                    ensure project success.
                   </p>
                 </div>
               </li>
-
             </ul>
           </section>
 
-
-       <!--
+          <!--
   - testimonials
 -->
 
-<section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Extra-Curricular Activities</h3>
 
-    <h3 class="h3 testimonials-title">Extra-Curricular Activities</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div
+                  class="content-card"
+                  data-testimonials-item
+                  data-testimonials-date="October 2023 - Present"
+                >
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/ammart.png"
+                      class="border-radius"
+                      alt="Sales"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-    <ul class="testimonials-list has-scrollbar">
-      <li class="testimonials-item">
-        <div class="content-card" data-testimonials-item data-testimonials-date="October 2023 - Present">
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    AmMart, Founder
+                  </h4>
 
-          <figure class="testimonials-avatar-box">
-            <img src="./assets/images/ammart.png" class="border-radius" alt="Sales" width="60" data-testimonials-avatar>
-          </figure>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Sold over $17,000 worth of physical products with a profit
+                      exceeding $11,000 (Around 68% Profit). Maintained a 5-star
+                      rating with over 300 clients on Marketplace. Developed an
+                      automated Software and an Excel system for managing sales,
+                      inventory, and client interactions.
+                    </p>
+                  </div>
+                </div>
+              </li>
 
-          <h4 class="h4 testimonials-item-title" data-testimonials-title>AmMart, Founder</h4>
+              <li class="testimonials-item">
+                <div
+                  class="content-card"
+                  data-testimonials-item
+                  data-testimonials-date="November 2022 - Present"
+                >
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/esa.png"
+                      alt="Egyptian Student Association"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-          <div class="testimonials-text" data-testimonials-text>
-            <p>
-              Sold over $16,000 worth of physical products with a profit exceeding $11,000 (Around 68% Profit). Maintained a 5-star rating with over 260 clients on Marketplace. Developed an automated Software and an Excel system for managing sales, inventory, and client interactions.
-            </p>
-          </div>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Egyptian Student Association, Co-Founder and VP Finance
+                  </h4>
 
-        </div>
-      </li>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Led multiple large-scale events with 1,000+ attendees,
+                      achieving an average of 3x annual revenue increase through
+                      strategic budgeting and sponsorships, enhancing event
+                      quality. Increased social media engagement by 550+
+                      followers and won the Best Club Award (2023-2024) and
+                      Collaboration Award (2024–2025).
+                    </p>
+                  </div>
+                </div>
+              </li>
 
-      <li class="testimonials-item">
-        <div class="content-card" data-testimonials-item data-testimonials-date="November 2022 - Present">
+              <li class="testimonials-item">
+                <div
+                  class="content-card"
+                  data-testimonials-item
+                  data-testimonials-date="March 2019 - September 2022"
+                >
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/empire.jpg"
+                      class="border-radius"
+                      alt="Empire Attire Affiliate Program"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-          <figure class="testimonials-avatar-box">
-            <img src="./assets/images/esa.png" alt="Egyptian Student Association" width="60" data-testimonials-avatar>
-          </figure>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Empire Attire Affiliate Program, Sponsor
+                  </h4>
 
-          <h4 class="h4 testimonials-item-title" data-testimonials-title>Egyptian Student Association, Co-Founder and VP Finance</h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Secured a personal gym training sponsorship and was
+                      promoted to Level 4 sponsor, representing the brand at the
+                      Dubai Muscle Show—one of the largest fitness expos in the
+                      Middle East—and contributing to its visibility and
+                      success.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-          <div class="testimonials-text" data-testimonials-text>
-            <p>
-Led multiple large-scale events with 1,000+ attendees, achieving an average of 3x annual revenue increase through strategic budgeting and sponsorships, enhancing event quality. Increased social media engagement by 550+ followers and won the Best Club Award (2023-2024) and Collaboration Award (2024–2025).            </p>
-          </div>
-
-        </div>
-      </li>
-
-      <li class="testimonials-item">
-        <div class="content-card" data-testimonials-item data-testimonials-date="March 2019 - September 2022">
-
-          <figure class="testimonials-avatar-box">
-            <img src="./assets/images/empire.jpg" class="border-radius" alt="Empire Attire Affiliate Program" width="60" data-testimonials-avatar>
-          </figure>
-
-          <h4 class="h4 testimonials-item-title" data-testimonials-title>Empire Attire Affiliate Program, Sponsor</h4>
-
-          <div class="testimonials-text" data-testimonials-text>
-            <p>
-              Secured a personal gym training sponsorship and was promoted to Level 4 sponsor, representing the brand at the Dubai Muscle Show—one of the largest fitness expos in the Middle East—and contributing to its visibility and success.
-            </p>
-          </div>
-
-        </div>
-      </li>
-
-
-    </ul>
-
-  </section>
-
-  <!--
+          <!--
     - testimonials modal
   -->
 
-  <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-    <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-    <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/esa.png"
+                    alt="Egyptian Student Association"
+                    width="80"
+                    data-modal-img
+                    style="border-radius: 14px"
+                  />
+                </figure>
 
-      <button class="modal-close-btn" data-modal-close-btn>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
 
-      <div class="modal-img-wrapper">
-        <figure class="modal-avatar-box">
-          <img src="./assets/images/esa.png" alt="Egyptian Student Association" width="80" data-modal-img style="border-radius: 14px;">
-        </figure>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  Egyptian Student Association, VP Finance
+                </h4>
 
-        <img src="./assets/images/icon-quote.svg" alt="quote icon">
-      </div>
+                <time data-modal-date></time>
 
-      <div class="modal-content">
+                <div data-modal-text>
+                  <p>
+                    Led several events with 1,000+ attendees, grew revenue by
+                    500%, and increased community engagement by 120%.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-        <h4 class="h3 modal-title" data-modal-title>Egyptian Student Association, VP Finance</h4>
-
-        <time data-modal-date></time>
-
-        <div data-modal-text>
-          <p>
-            Led several events with 1,000+ attendees, grew revenue by 500%, and increased community engagement by 120%.
-          </p>
-        </div>
-
-      </div>
-
-    </section>
-
-  </div>
-
-  <!--
+          <!--
     - clients
   -->
 
-  <!--
+          <!--
   - clients
 -->
 
-<section class="clients">
+          <section class="clients">
+            <h3 class="h3 clients-title">Certificates</h3>
 
-    <h3 class="h3 clients-title">Certificates</h3>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a
+                  href="https://badges.ucalgary.ca/achievements/1cf0ddaacfb74a372d9764b2b5928c89"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/leadership.jpg"
+                    alt="Engineering Leadership Program"
+                  />
+                </a>
+                <div class="clients-text">
+                  <h4 class="h4 clients-item-title">
+                    Engineering Leadership Program, University of Calgary
+                  </h4>
+                </div>
+              </li>
 
-    <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a
+                  href="https://badges.ucalgary.ca/achievements/0aedae926f1656f8f160898633ce938a"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/research.jpg"
+                    alt="Research Skills Foundations"
+                  />
+                </a>
+                <div class="clients-text">
+                  <h4 class="h4 clients-item-title">
+                    Research Skills Foundations, Taylor Institute for Teaching
+                    and Learning
+                  </h4>
+                </div>
+              </li>
 
-      <li class="clients-item">
-        <a href="https://badges.ucalgary.ca/achievements/1cf0ddaacfb74a372d9764b2b5928c89" target="_blank">
-          <img src="./assets/images/leadership.jpg" alt="Engineering Leadership Program">
-        </a>
-        <div class="clients-text">
-          <h4 class="h4 clients-item-title">Engineering Leadership Program, University of Calgary</h4>
-
-        </div>
-      </li>
-
-      <li class="clients-item">
-        <a href="https://badges.ucalgary.ca/achievements/0aedae926f1656f8f160898633ce938a" target="_blank">
-          <img src="./assets/images/research.jpg" alt="Research Skills Foundations">
-        </a>
-        <div class="clients-text">
-          <h4 class="h4 clients-item-title">Research Skills Foundations, Taylor Institute for Teaching and Learning</h4>
-
-        </div>
-      </li>
-
-      <li class="clients-item">
-        <a href="https://badges.ucalgary.ca/achievements/47696515ce116e476475b8407b7c7761" target="_blank">
-          <img src="./assets/images/entrepreneurship.jpg" alt="Engineering Entrepreneurship Essentials">
-        </a>
-        <div class="clients-text">
-          <h4 class="h4 clients-item-title">Engineering Entrepreneurship Essentials, University of Calgary</h4>
-
-        </div>
-      </li>
-
-    </ul>
-
-  </section>
-
-
-
-      </article>
-
-
-
-
+              <li class="clients-item">
+                <a
+                  href="https://badges.ucalgary.ca/achievements/47696515ce116e476475b8407b7c7761"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/entrepreneurship.jpg"
+                    alt="Engineering Entrepreneurship Essentials"
+                  />
+                </a>
+                <div class="clients-text">
+                  <h4 class="h4 clients-item-title">
+                    Engineering Entrepreneurship Essentials, University of
+                    Calgary
+                  </h4>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
         <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-            <header>
-              <h2 class="h2 article-title">Resume</h2>
-            </header>
-
-            <section class="timeline">
-              <div class="title-wrapper">
-                <div class="icon-box">
-                  <ion-icon name="book-outline"></ion-icon>
-                </div>
-                <h3 class="h3">Education</h3>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
               </div>
-              <ol class="timeline-list">
-                <li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">University of Calgary</h4>
-                  <span>2020 — 2025</span>
-                  <p class="timeline-text">
-                    Currently pursuing a Bachelor of Science in Software Engineering with a Minor in Mechatronics. Cumulative GPA of 3.6. Received Entrance, Undergraduate Scholarships (x2), and PURE (x3) awards.
-                  </p>
-                </li>
-                <li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">The International School of Choueifat, Abu Dhabi Khalifa City A</h4>
-                  <span>2010 — 2020</span>
-                  <p class="timeline-text">
-                    Graduated high school with a GPA of 3.8, SAT 1 score of 1350/1600. Completed 5 AP courses (Math, Physics C: Electricity and Magnetism, Physics C: Mechanics, Chemistry, Computer Science) and 3 SAT 2 subject tests (Physics, Chemistry, Math 2).
-                  </p>
-                </li>
-              </ol>
-            </section>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">University of Calgary</h4>
+                <span>2020 — 2025</span>
+                <p class="timeline-text">
+                  Graduated with a Bachelor of Science in Software Engineering
+                  and a Minor in Mechatronics. Cumulative GPA: 3.56. Recipient of
+                  Entrance Scholarship, Undergraduate Scholarships (x2), and
+                  PURE Awards (x3).
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  The International School of Choueifat, Abu Dhabi Khalifa City
+                  A
+                </h4>
+                <span>2010 — 2020</span>
+                <p class="timeline-text">
+                  Graduated high school with a GPA of 3.8, SAT 1 score of
+                  1350/1600. Completed 5 AP courses (Math, Physics C:
+                  Electricity and Magnetism, Physics C: Mechanics, Chemistry,
+                  Computer Science) and 3 SAT 2 subject tests (Physics,
+                  Chemistry, Math 2).
+                </p>
+              </li>
+            </ol>
+          </section>
 
-            <section class="timeline">
-              <div class="title-wrapper">
-                <div class="icon-box">
-                  <ion-icon name="book-outline"></ion-icon>
-                </div>
-                <h3 class="h3">Experience</h3>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
               </div>
-              <ol class="timeline-list">
-		<li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">Software Engineer, Renov AI</h4>
-                  <span>May 2025 — Present</span>
-                  <p class="timeline-text">
-		Built a full-stack renovation platform using Flutter, FastAPI, PHP, and SQLAlchemy, collaborating closely with AI agents for smart workflow integration.
-			</p>
-                </li>
+              <h3 class="h3">Experience</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Developer (Founding Team), Worthify Rewards
+                </h4>
+                <span>June 2025 — Present</span>
+                <p class="timeline-text">
+                  Contributed to the development of a merchant web app and
+                  customer mobile app for a digital rewards platform using React
+                  Native, Express, and PostgreSQL, while also supporting product
+                  strategy, marketing, and early business operations.
+                  <a href="https://worthifyrewards.com/" target="_blank"
+                    >worthifyrewards.com</a
+                  >
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Engineer, Renov-AI Technology Inc.
+                </h4>
+                <span>May 2025 — July 2025</span>
+                <p class="timeline-text">
+                  Built a mobile app using Flutter and FastAPI that
+                  assists home renovation through AI-powered object detection
+                  and interactive user input for design suggestions.
+                </p>
+              </li>
 
-		<li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">Junior Software Engineer, Ripple Group Inc.</h4>
-                  <span>Sep. 2023 — Sep. 2024</span>
-                  <p class="timeline-text">
-                    Developed web/mobile applications using Angular, C#, Classic ASP, and Python for different projects.
-                  </p>
-                </li>
-                <li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">Artificial Intelligence Research Intern, University of Calgary</h4>
-                  <span>May 2024 — Sep. 2024</span>
-                  <p class="timeline-text">
-                    Conducted a literature review on AI's impact on education and developed guidelines for AI integration.
-                  </p>
-                </li>
-                <li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">Machine Learning Research Intern, University of Calgary</h4>
-                  <span>May 2023 — Sep. 2023</span>
-                  <p class="timeline-text">
-                    Reviewed data analytics ROI and developed a web tool for ROI analysis, implementing cost-effective ML models.
-                  </p>
-                </li>
-                <li class="timeline-item">
-                  <h4 class="h4 timeline-item-title">Full-Stack Development Research Intern, University of Calgary</h4>
-                  <span>May 2022 — Sep. 2022</span>
-                  <p class="timeline-text">
-                    Developed a mobile navigation app using React-Native and Firebase, enhancing urban mobility with integrated APIs.
-                  </p>
-                </li>
-              </ol>
-            </section>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Junior Software Developer, Ripple Group Inc.
+                </h4>
+                <span>Sep. 2023 — Sep. 2024</span>
+                <p class="timeline-text">
+                  Developed web/mobile applications using Angular 17, Ionic, ASP.NET,
+                  and Python for different projects.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Artificial Intelligence Research Intern, University of Calgary
+                </h4>
+                <span>May 2024 — Sep. 2024</span>
+                <p class="timeline-text">
+                  Conducted a literature review on AI’s impact in education,
+                  developed integration guidelines, and built a PyTorch chatbot
+                  trained on OpenWebText for academic support.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Machine Learning Research Intern, University of Calgary
+                </h4>
+                <span>May 2023 — Sep. 2023</span>
+                <p class="timeline-text">
+                  Conducted a literature review on ROI in data analytics and
+                  developed a React-Flask tool that visualizes ROI across ML
+                  models and incorporates active learning to improve data
+                  efficiency.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Full-Stack Development Research Intern, University of Calgary
+                </h4>
+                <span>May 2022 — Sep. 2022</span>
+                <p class="timeline-text">
+                  Developed a mobile navigation app using React-Native and
+                  Firebase, enhancing urban mobility with integrated APIs.
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
 
-          </article>
-
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Software Development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Embedded Systems</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Software Development</button>
+              <li class="filter-item">
+                <button data-filter-btn>Software Development</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Embedded Systems</button>
+              <li class="filter-item">
+                <button data-filter-btn>Embedded Systems</button>
               </li>
-
             </ul>
 
-          </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-          <ul class="project-list">
-            <li class="project-item active drop-shadow " data-filter-item data-category="software development">
-              <a href="https://github.com/ammar-y62/Medical-Clinic-Scheduling-Tool" target="_blank">
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                  <img src="./assets/images/medical-clinical.jpg" alt="Medical Clinic Scheduling Tool" loading="lazy" >
-                </figure>
+                <li class="select-item">
+                  <button data-select-item>Software Development</button>
+                </li>
 
-                <h3 class="project-title">Medical Clinic Scheduling Tool</h3>
+                <li class="select-item">
+                  <button data-select-item>Embedded Systems</button>
+                </li>
+              </ul>
+            </div>
 
-                <p class="project-category">Software Development</p>
+            <ul class="project-list">
+              <li
+                class="project-item active drop-shadow"
+                data-filter-item
+                data-category="software development"
+              >
+                <a
+                  href="https://github.com/ammar-y62/Medical-Clinic-Scheduling-Tool"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
-            <!-- <li class="project-item active drop-shadow " data-filter-item data-category="software development">
+                    <img
+                      src="./assets/images/medical-clinical.jpg"
+                      alt="Medical Clinic Scheduling Tool"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Medical Clinic Scheduling Tool</h3>
+
+                  <p class="project-category">Software Development</p>
+                </a>
+              </li>
+              <!-- <li class="project-item active drop-shadow " data-filter-item data-category="software development">
               <a href="https://github.com/ammar-y62/chatbot" target="_blank">
 
                 <figure class="project-img">
@@ -641,159 +748,217 @@ Led multiple large-scale events with 1,000+ attendees, achieving an average of 3
               </a>
             </li> -->
 
-            <li class="project-item active drop-shadow " data-filter-item data-category="software development">
-              <a href="https://github.com/ammar-y62/p2p-code-collaboration" target="_blank">
+              <li
+                class="project-item active drop-shadow"
+                data-filter-item
+                data-category="software development"
+              >
+                <a
+                  href="https://github.com/ammar-y62/p2p-code-collaboration"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/p2p-code-colab.jpg"
+                      alt="P2P Code Collaboration"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/p2p-code-colab.jpg" alt="P2P Code Collaboration" loading="lazy">
-                </figure>
+                  <h3 class="project-title">P2P Code Collaboration</h3>
 
-                <h3 class="project-title">P2P Code Collaboration</h3>
+                  <p class="project-category">Software Development</p>
+                </a>
+              </li>
 
-                <p class="project-category">Software Development</p>
+              <li
+                class="project-item active drop-shadow"
+                data-filter-item
+                data-category="software development"
+              >
+                <a
+                  href="https://github.com/ammar-y62/FoodHamper"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/food-hamper.jpg"
+                      alt="Food Hamper"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item active drop-shadow " data-filter-item data-category="software development">
-              <a href="https://github.com/ammar-y62/FoodHamper" target="_blank">
+                  <h3 class="project-title">Food Hamper</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Software Development</p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/food-hamper.jpg" alt="Food Hamper" loading="lazy">
-                </figure>
+              <li
+                class="project-item active drop-shadow"
+                data-filter-item
+                data-category="software development"
+              >
+                <a
+                  href="https://github.com/ammar-y62/PharmacyManagmentSystem"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Food Hamper</h3>
+                    <img
+                      src="./assets/images/pharmacy-website.jpg"
+                      alt="Pharmacy Management System"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Software Development</p>
+                  <h3 class="project-title">Pharmacy Management System</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Software Development</p>
+                </a>
+              </li>
 
-            <li class="project-item active drop-shadow " data-filter-item data-category="software development">
-              <a href="https://github.com/ammar-y62/PharmacyManagmentSystem" target="_blank">
+              <li
+                class="project-item active drop-shadow"
+                data-filter-item
+                data-category="software development"
+              >
+                <a
+                  href="https://github.com/ammar-y62/DigitalFlora"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/digital-flora.jpg"
+                      alt="Digital Flora"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/pharmacy-website.jpg" alt="Pharmacy Management System" loading="lazy">
-                </figure>
+                  <h3 class="project-title">Digital Flora</h3>
 
-                <h3 class="project-title">Pharmacy Management System</h3>
+                  <p class="project-category">Software Development</p>
+                </a>
+              </li>
 
-                <p class="project-category">Software Development</p>
+              <li
+                class="project-item active drop-shadow"
+                data-filter-item
+                data-category="embedded systems"
+              >
+                <a
+                  href="https://github.com/ammar-y62/PIC24F16KA101-Multimeter"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/PIC24F16KA101-Multimeter.jpg"
+                      alt="PIC24F16KA101 Multimeter"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item active drop-shadow " data-filter-item data-category="software development">
-              <a href="https://github.com/ammar-y62/DigitalFlora" target="_blank">
+                  <h3 class="project-title">PIC24F16KA101 Multimeter</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Embedded Systems</p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/digital-flora.jpg" alt="Digital Flora" loading="lazy">
-                </figure>
+              <li
+                class="project-item active drop-shadow"
+                data-filter-item
+                data-category="embedded systems"
+              >
+                <a
+                  href="https://github.com/ammar-y62/PIC24F16KA101-Timer"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Digital Flora</h3>
+                    <img
+                      src="./assets/images/PIC24F16KA101-Timer.jpg"
+                      alt="PIC24F16KA101 Timer"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Software Development</p>
+                  <h3 class="project-title">PIC24F16KA101 Timer</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Embedded Systems</p>
+                </a>
+              </li>
 
-            <li class="project-item active drop-shadow " data-filter-item data-category="embedded systems">
-              <a href="https://github.com/ammar-y62/PIC24F16KA101-Multimeter" target="_blank">
+              <li
+                class="project-item active drop-shadow"
+                data-filter-item
+                data-category="embedded systems"
+              >
+                <a
+                  href="https://github.com/ammar-y62/ArduinoProjects"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/arduino.jpg"
+                      alt="Arduino Projects"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/PIC24F16KA101-Multimeter.jpg" alt="PIC24F16KA101 Multimeter" loading="lazy">
-                </figure>
+                  <h3 class="project-title">Arduino Projects</h3>
 
-                <h3 class="project-title">PIC24F16KA101 Multimeter</h3>
+                  <p class="project-category">Embedded Systems</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                <p class="project-category">Embedded Systems</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active drop-shadow " data-filter-item data-category="embedded systems">
-              <a href="https://github.com/ammar-y62/PIC24F16KA101-Timer" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/PIC24F16KA101-Timer.jpg" alt="PIC24F16KA101 Timer" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">PIC24F16KA101 Timer</h3>
-
-                <p class="project-category">Embedded Systems</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active drop-shadow " data-filter-item data-category="embedded systems">
-              <a href="https://github.com/ammar-y62/ArduinoProjects" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/arduino.jpg" alt="Arduino Projects" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arduino Projects</h3>
-
-                <p class="project-category">Embedded Systems</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
+          <section class="blog-posts">
             <ul class="blog-posts-list">
               <li class="blog-post-item">
                 <a href="assets/files/Capstone.pdf" target="_blank">
                   <figure class="blog-banner-box">
-                    <img src="./assets/images/Capstone.jpg" alt="Capstone" loading="lazy">
+                    <img
+                      src="./assets/images/Capstone.jpg"
+                      alt="Capstone"
+                      loading="lazy"
+                    />
                   </figure>
                   <div class="blog-content">
                     <div class="blog-meta">
@@ -802,23 +967,35 @@ Led multiple large-scale events with 1,000+ attendees, achieving an average of 3
                     </div>
                     <h3 class="h3 blog-item-title">Spot the Spark</h3>
                     <p class="blog-text">
-                    Design and implementation of a low-power, real-time wildfire monitoring system integrating sensor networks and wireless data transmission for early detection and prevention.                    </p>
+                      Design and implementation of a low-power, real-time
+                      wildfire monitoring system integrating sensor networks and
+                      wireless data transmission for early detection and
+                      prevention.
+                    </p>
                   </div>
                 </a>
               </li>
               <li class="blog-post-item">
                 <a href="assets/files/Computer_vision.pdf" target="_blank">
                   <figure class="blog-banner-box">
-                    <img src="./assets/images/Computer_vision.jpg" alt="Computer_vision" loading="lazy">
+                    <img
+                      src="./assets/images/Computer_vision.jpg"
+                      alt="Computer_vision"
+                      loading="lazy"
+                    />
                   </figure>
                   <div class="blog-content">
                     <div class="blog-meta">
                       <span class="dot"></span>
                       <time datetime="2023-07-23">April 10, 2025</time>
                     </div>
-                    <h3 class="h3 blog-item-title">AI-Powered Sign Language Recognition</h3>
+                    <h3 class="h3 blog-item-title">
+                      AI-Powered Sign Language Recognition
+                    </h3>
                     <p class="blog-text">
-                      Recognition of static ASL letters using YOLOv8: exploring AI-driven gesture detection, real-time inference, and future assistive tech applications.
+                      Recognition of static ASL letters using YOLOv8: exploring
+                      AI-driven gesture detection, real-time inference, and
+                      future assistive tech applications.
                     </p>
                   </div>
                 </a>
@@ -826,32 +1003,52 @@ Led multiple large-scale events with 1,000+ attendees, achieving an average of 3
               <li class="blog-post-item">
                 <a href="assets/files/AWS.pdf" target="_blank">
                   <figure class="blog-banner-box">
-                    <img src="./assets/images/AWS.jpg" alt="AWS" loading="lazy">
+                    <img
+                      src="./assets/images/AWS.jpg"
+                      alt="AWS"
+                      loading="lazy"
+                    />
                   </figure>
                   <div class="blog-content">
                     <div class="blog-meta">
                       <span class="dot"></span>
                       <time datetime="2023-07-23">April 08, 2025</time>
                     </div>
-                    <h3 class="h3 blog-item-title">Performance Evaluation of Autoscaling Policies in AWS </h3>
+                    <h3 class="h3 blog-item-title">
+                      Performance Evaluation of Autoscaling Policies in AWS
+                    </h3>
                     <p class="blog-text">
-                      Analyzing autoscaling and load balancing strategies in AWS to optimize performance and cost-efficiency under dynamic user traffic conditions.                    </p>
+                      Analyzing autoscaling and load balancing strategies in AWS
+                      to optimize performance and cost-efficiency under dynamic
+                      user traffic conditions.
+                    </p>
                   </div>
                 </a>
               </li>
               <li class="blog-post-item">
-                <a href="assets/files/Paper_AI_In_Education.pdf" target="_blank">
+                <a
+                  href="assets/files/Paper_AI_In_Education.pdf"
+                  target="_blank"
+                >
                   <figure class="blog-banner-box">
-                    <img src="./assets/images/paper-ai-education.jpg" alt="AI in Education" loading="lazy">
+                    <img
+                      src="./assets/images/paper-ai-education.jpg"
+                      alt="AI in Education"
+                      loading="lazy"
+                    />
                   </figure>
                   <div class="blog-content">
                     <div class="blog-meta">
                       <span class="dot"></span>
                       <time datetime="2024-07-23">August 23, 2024</time>
                     </div>
-                    <h3 class="h3 blog-item-title">Integrating AI Tools in Academia</h3>
+                    <h3 class="h3 blog-item-title">
+                      Integrating AI Tools in Academia
+                    </h3>
                     <p class="blog-text">
-                      A comprehensive paper evaluating AI's impact on academic practices, intellectual development, and proposing educational revisions.
+                      A comprehensive paper evaluating AI's impact on academic
+                      practices, intellectual development, and proposing
+                      educational revisions.
                     </p>
                   </div>
                 </a>
@@ -859,7 +1056,11 @@ Led multiple large-scale events with 1,000+ attendees, achieving an average of 3
               <li class="blog-post-item">
                 <a href="assets/files/LR_AI_In_Education.pdf" target="_blank">
                   <figure class="blog-banner-box">
-                    <img src="./assets/images/blog-ai-education.jpg" alt="AI in Education" loading="lazy">
+                    <img
+                      src="./assets/images/blog-ai-education.jpg"
+                      alt="AI in Education"
+                      loading="lazy"
+                    />
                   </figure>
                   <div class="blog-content">
                     <div class="blog-meta">
@@ -868,15 +1069,23 @@ Led multiple large-scale events with 1,000+ attendees, achieving an average of 3
                     </div>
                     <h3 class="h3 blog-item-title">AI in Education</h3>
                     <p class="blog-text">
-                      Exploring the impact of Artificial Intelligence in the educational sector.
+                      Exploring the impact of Artificial Intelligence in the
+                      educational sector.
                     </p>
                   </div>
                 </a>
               </li>
               <li class="blog-post-item">
-                <a href="assets/files/LR_ROI_of_Data_Analytics.pdf" target="_blank">
+                <a
+                  href="assets/files/LR_ROI_of_Data_Analytics.pdf"
+                  target="_blank"
+                >
                   <figure class="blog-banner-box">
-                    <img src="./assets/images/blog-roi-data-analytics.jpg" alt="ROI of Data Analytics" loading="lazy">
+                    <img
+                      src="./assets/images/blog-roi-data-analytics.jpg"
+                      alt="ROI of Data Analytics"
+                      loading="lazy"
+                    />
                   </figure>
                   <div class="blog-content">
                     <div class="blog-meta">
@@ -885,121 +1094,152 @@ Led multiple large-scale events with 1,000+ attendees, achieving an average of 3
                     </div>
                     <h3 class="h3 blog-item-title">ROI of Data Analytics</h3>
                     <p class="blog-text">
-                      Challenges and opportunities of adopting data-driven decision-making (DDDM) in organizations, focusing on ROI in the context of ML and DA.
+                      Challenges and opportunities of adopting data-driven
+                      decision-making (DDDM) in organizations, focusing on ROI
+                      in the context of ML and DA.
                     </p>
                   </div>
                 </a>
               </li>
               <li class="blog-post-item">
-                <a href="assets/files/Native_VS_Cross_Platform.pdf" target="_blank">
+                <a
+                  href="assets/files/Native_VS_Cross_Platform.pdf"
+                  target="_blank"
+                >
                   <figure class="blog-banner-box">
-                    <img src="./assets/images/blog-native-vs-cross-platform.jpg" alt="Native VS Cross Platform Development" loading="lazy">
+                    <img
+                      src="./assets/images/blog-native-vs-cross-platform.jpg"
+                      alt="Native VS Cross Platform Development"
+                      loading="lazy"
+                    />
                   </figure>
                   <div class="blog-content">
                     <div class="blog-meta">
                       <span class="dot"></span>
                       <time datetime="2022-07-23">July 23, 2022</time>
                     </div>
-                    <h3 class="h3 blog-item-title">Native VS Cross Platform Development</h3>
+                    <h3 class="h3 blog-item-title">
+                      Native VS Cross Platform Development
+                    </h3>
                     <p class="blog-text">
-                      Comparing native and cross-platform development approaches.
+                      Comparing native and cross-platform development
+                      approaches.
                     </p>
                   </div>
                 </a>
               </li>
             </ul>
           </section>
+        </article>
 
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox drop-shadow" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100956.64083742446!2d-114.16920426753099!3d51.02727166294569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fd5a9cfe05b%3A0xdeadbeefdeadbeef!2sCalgary%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox drop-shadow" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100956.64083742446!2d-114.16920426753099!3d51.02727166294569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fd5a9cfe05b%3A0xdeadbeefdeadbeef!2sCalgary%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
+            <form action="#" class="form" data-form id="contactForm">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+              <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
 
+            <script>
+              document
+                .getElementById("contactForm")
+                .addEventListener("submit", function (event) {
+                  // Prevent the default submission action
+                  event.preventDefault();
 
-          <form action="#" class="form" data-form id="contactForm">
-            <div class="input-wrapper">
-              <input type="text" name="name" id="name" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-            <textarea name="message" id="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
+                  // Check form validity
+                  if (!this.checkValidity()) {
+                    // If the form is invalid, you can show error messages or simply return
+                    this.reportValidity(); // This will display the built-in validation messages
+                    return;
+                  }
 
-          <script>
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-              // Prevent the default submission action
-              event.preventDefault();
+                  // If valid, proceed to send the mail
+                  sendMail();
+                });
 
-              // Check form validity
-              if (!this.checkValidity()) {
-                // If the form is invalid, you can show error messages or simply return
-                this.reportValidity(); // This will display the built-in validation messages
-                return;
+              function sendMail() {
+                // Your mail sending logic here
+                console.log("Mail sent!");
               }
+            </script>
+          </section>
+        </article>
+      </div>
+    </main>
 
-              // If valid, proceed to send the mail
-              sendMail();
-            });
-
-            function sendMail() {
-              // Your mail sending logic here
-              console.log('Mail sent!');
-            }
-          </script>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  <!-- <script nomodule src="/node_modules/ionicons/components/i"></script>
+    <!-- <script nomodule src="/node_modules/ionicons/components/i"></script>
   <script nomodule src="/node_modules/ionicons/components/ion-icon.js"></script> -->
-
-</body>
-
+  </body>
 </html>
